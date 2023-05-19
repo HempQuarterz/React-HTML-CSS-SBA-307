@@ -1,0 +1,113 @@
+/* hemp styles for the hemp site*/
+
+/* Global CSS */
+
+body {
+    font-family: 'SweetLeaf', sans-serif;
+    font-size: 30px;
+    color: green;
+    text-shadow:
+		-1px -1px 0 white,
+		1px -1px 0 white,
+		-1px 1px 0 white,
+		1px 1px 0 white;
+    margin: 0;
+    padding: 0;
+    background-image:url(https://i.gifer.com/133C.gif); 
+    background-repeat:repeat; 
+}
+
+/* Header */
+
+header {
+    background-color: black;
+    color: green;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 0;
+}
+
+nav a {
+    color: green;
+    text-decoration: none;
+}
+
+    main {
+        padding: 20px;
+    }
+
+    footer {
+        background-color: black;
+        color: green;
+        padding: 0px;
+    }
+
+
+    table {
+        width: 80%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      
+      /* Style the table header */
+      thead th {
+        background-color: grey;
+        border-bottom: 1px solid green;
+        padding: 10px;
+        text-align: left;
+      }
+      
+      /* Style the table rows */
+      tbody td {
+        padding: 10px;
+        border-bottom: 1px solid green;
+      }
+      
+      /* Alternate row background color for better readability */
+      tbody tr:nth-child(even) {
+        background-color: grey;
+      }
+      
+      /* Apply some styles to the header and main sections */
+      header, main {
+        padding: 20px;
+      }
+      
+      header h1, main h2 {
+        margin-top: 0;
+      }
+
+
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+      
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 0;
+        list-style: none;
+      }
+      
+      .dropdown-menu li {
+        padding: 10px;
+      }
+      
+      .dropdown-menu li:hover {
+        background-color: #f2f2f2;
+      }

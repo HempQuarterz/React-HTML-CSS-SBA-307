@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HempQuarterz® Website</title>
+
+    <link rel="stylesheet" type="text/css" href="hempstyles.css">
+
+    <link href="https://fonts.cdnfonts.com/css/sweet-leaf" rel="stylesheet">
+
+    <style>
+        form {
+          border: 2px solid green;
+          height: 100%;
+          width: 300px;
+          background-color: whitesmoke;
+          text-align: center;
+        }
+
+        input {
+            background-color: lightgrey;
+            text-align: center;
+            height: 30px;
+            width: 75%;
+        }
+
+       .unstyled-button {
+
+        border: none;
+        background-color: rgba(128, 128, 128, 0);
+        color: red;
+
+       }
+       
+       .Forms {
+        display: flex;
+        justify-content: space-around;
+       }
+
+       .submit{
+
+        height: 100px;
+        width: 50px;
+       }
+    
+        
+      </style>
+
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to HempQuarterz®</h1>
+
+        <nav>
+            <ul>
+              <li><a href="./hempindex.html">Home</a></li>
+              <li><a href="./abouthemp.html">About Hemp</a></li>
+              <li class="dropdown">
+                <a href="./hempcontact.html">Contact HQz</a>
+                <ul class="dropdown-menu">
+                  <li><a href="./hempcontact.html">General Inquiry</a></li>
+                  <li><a href="./hempcontact.html">Sales</a></li>
+                  <li><a href="./hempcontact.html">Support</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </nav>
+    </header>
+
+    <main>
+        <h2>The headquarters of hemp</h2>
+        <p>Welcome to HempQuarterz® where we discuss everything related to industrial hemp.</p>
+    </main>
+
+    <section>
+
+        <div class="Forms">
+
+            <form action="#">
+        
+                <fieldset>
+                <div class="LoginPic">
+                <img src="./Images/png-transparent-login-computer-icons-avatar-icon-monochrome-black-silhouette.png" alt="Login Image"
+                width="100px"
+                height="25%">
+              </div>
+        
+                <h2>Login</h2>
+          
+                <label for="email">Email address
+                <input type="text";
+                name="email";
+                placeholder="";
+                required/>
+              </label>
+        
+                <br />
+                <label for="password">Password
+                <input
+                  type="password";
+                  name="password"
+                  id="password"
+                  placeholder=""
+                />
+              </label>
+        
+          <br>
+                <button type="submit" id="submit" style="background: purple; color: white;">Login</button>
+        
+                <br>
+                
+                <div>
+                  <button class="unstyled-button">Forgot Password</button>
+                </div>
+        
+                
+                <div>
+                  <button style="color: purple;" class="unstyled-button";>Create Account?</button>
+                </div>
+        
+              
+            </fieldset>
+              </form>
+        
+        
+          
+        
+              
+                <form action="#">
+            
+                    <fieldset>
+                    <div class="SignUpPic">
+                    <img src="./Images/png-transparent-login-computer-icons-avatar-icon-monochrome-black-silhouette.png" alt="Login Image"
+                    width="100px"
+                    height="25%">
+                  </div>
+            
+                    <h2>Sign Up</h2>
+              
+                    <label for="SignUpEmail">Email address
+                    <input type="email";
+                    name="SignUpEmail";
+                    placeholder="";
+                    required
+                    />
+                  </label>
+        
+                    <br />
+                    <label for="SignUpPassword">Password
+                    <input
+                      type="password";
+                      name="SignUpPassword"
+                      id="SignUpPassword"
+                      placeholder=""
+                    />
+                  </label>
+        
+              <br>
+              
+              <label for="ConfirmPassword">Confirm Password
+                <input
+                  type="password";
+                  name="ConfirmPassword"
+                  id="ConfirmPassword"
+                  placeholder=""
+                />
+              </label>
+        
+              <br>
+              
+              <label for="UserName">User Name
+                <input type="text";
+                name="UserName";
+                placeholder="";
+                required
+                />
+              </label>
+        
+              <br>
+              
+              <button type="submit" id="SignUp" style="background: purple; color: white;">Sign Up</button>    
+                    <br>
+                    
+                    
+                    
+            
+                </fieldset>
+                  </form>
+          
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 HempQuarterz®. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
