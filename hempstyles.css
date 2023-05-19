@@ -17,7 +17,31 @@ body {
     background-repeat:repeat; 
 }
 
-/* Header */
+/*Styles for animation 1*/
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+  }
+  
+  .animated-text {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+/*Styles for animation 2*/
+
+
+/* Styles for Header */
 
 header {
     background-color: black;
@@ -62,26 +86,30 @@ nav a {
         margin-bottom: 20px;
       }
       
-      /* Style the table header */
+      /* Styles for the table header */
       thead th {
         background-color: grey;
-        border-bottom: 1px solid green;
+        border-bottom: 5px solid purple;
         padding: 10px;
         text-align: left;
       }
       
-      /* Style the table rows */
+      /* Styles for the table rows */
       tbody td {
         padding: 10px;
         border-bottom: 1px solid green;
       }
       
-      /* Alternate row background color for better readability */
+      /* Alternate row background color */
       tbody tr:nth-child(even) {
         background-color: grey;
       }
+        tbody tr:nth-child(odd) { 
+            background-color: rgba(128, 0, 128, 0.637);
+            ;
+      }
       
-      /* Apply some styles to the header and main sections */
+      /* Styles for the header and main sections */
       header, main {
         padding: 20px;
       }
