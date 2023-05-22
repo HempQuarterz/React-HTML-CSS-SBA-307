@@ -1,6 +1,6 @@
-/* hemp styles for the hemp site*/
+/* hemp styles for HQz site*/
 
-/* Global CSS */
+/* Global styles */
 
 body {
     font-family: 'SweetLeaf', sans-serif;
@@ -17,7 +17,7 @@ body {
     background-repeat:repeat; 
 }
 
-/*Styles for animation 1*/
+/* Styles for animation #1 */
 
 @keyframes bounce {
     0% {
@@ -31,14 +31,35 @@ body {
       }
   }
   
-  .animated-text {
+  .animated-header {
     animation-name: bounce;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
 
-/*Styles for animation 2*/
+/* Styles for animation #2 */
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.flashing-text {
+  animation-name: flash;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  font-size: 50px;
+
+}
 
 
 /* Styles for Header */
@@ -86,7 +107,7 @@ nav a {
         margin-bottom: 20px;
       }
       
-      /* Styles for the table header */
+      /* Styles for the table */
       thead th {
         background-color: grey;
         border-bottom: 5px solid purple;
@@ -94,13 +115,11 @@ nav a {
         text-align: left;
       }
       
-      /* Styles for the table rows */
       tbody td {
         padding: 10px;
         border-bottom: 1px solid green;
       }
       
-      /* Alternate row background color */
       tbody tr:nth-child(even) {
         background-color: grey;
       }
@@ -138,4 +157,14 @@ nav a {
       
       .dropdown-menu li:hover {
         background-color: #f2f2f2;
+      }
+
+
+      /* Styles for the horizontal breaks */
+
+      .horizontal-break {
+        border: none;
+        height: 2px; 
+        background-color: green;
+        margin: 10px 0;
       }
